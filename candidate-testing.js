@@ -59,7 +59,7 @@ function gradeQuiz(candidateAnswers) {
 	}
 
 	console.log(grade)
-	// return grade;
+	return grade;
 	
   
 }

@@ -45,7 +45,7 @@ function gradeQuiz(candidateAnswers) {
 		}  
 	}
 
-    let grade = (score/questions.length) * 100;
+    let grade = score * 20;
 	console.log(">>> Overall Grade: " + grade + "% (" + score + " of 5 responses correct) <<<")
 
 	if (grade >= 80) {
@@ -54,7 +54,7 @@ function gradeQuiz(candidateAnswers) {
 		console.log(">>> Status: FAILED <<<")
 	}
 
-  return grade;
+  
 }
 
 function runProgram() {

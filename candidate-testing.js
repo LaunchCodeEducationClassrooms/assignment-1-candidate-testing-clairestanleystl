@@ -54,6 +54,7 @@ function gradeQuiz(candidateAnswers) {
 		console.log(">>> Status: FAILED <<<")
 	}
 
+	return grade;
   
 }
 

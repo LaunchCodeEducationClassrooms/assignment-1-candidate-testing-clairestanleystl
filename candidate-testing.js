@@ -28,6 +28,7 @@ function askQuestion() {
 		answer = input.question((i+1) + ")  " + questions[i])
 		candidateAnswers.push(answer)
 		console.log("Your Answer: " + answer)
+		console.log("as entered " + candidateAnswers.length)
 		console.log("Correct Answer: " + correctAnswers[i])
 		console.log()
 		// console.log(candidateAnswers)
@@ -42,8 +43,11 @@ function gradeQuiz(candidateAnswers) {
 	for (i = 0; i < questions.length; i++) {
 		if (correctAnswers[i].toLowerCase() === candidateAnswers[i].toLowerCase()) {
 			score += 1
-		}  
+		}
+		console.log(score)
+		console.log("grade log" + candidateAnswers.length)  
 	}
+
 
     let grade = score * 20;
 	console.log(">>> Overall Grade: " + grade + "% (" + score + " of 5 responses correct) <<<")
@@ -54,7 +58,9 @@ function gradeQuiz(candidateAnswers) {
 		console.log(">>> Status: FAILED <<<")
 	}
 
-	return grade;
+	console.log(grade)
+	// return grade;
+	
   
 }
 

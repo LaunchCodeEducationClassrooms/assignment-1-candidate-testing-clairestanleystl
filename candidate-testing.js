@@ -28,9 +28,7 @@ function askQuestion() {
 		answer = input.question((i+1) + ")  " + questions[i])
 		candidateAnswers.push(answer)
 		console.log("Your Answer: " + answer)
-		console.log("as entered " + candidateAnswers.length)
 		console.log("Correct Answer: " + correctAnswers[i])
-		// console.log(score)
 		console.log()
 		// console.log(candidateAnswers)
 	}
@@ -45,8 +43,6 @@ function gradeQuiz(candidateAnswers) {
 		if (correctAnswers[i].toLowerCase() === candidateAnswers[i].toLowerCase()) {
 			score += 1
 		}
-		console.log("test: " + score)
-		console.log("grade log" + candidateAnswers.length)  
 	}
 
 
@@ -61,7 +57,6 @@ function gradeQuiz(candidateAnswers) {
 		score = 0
 	}
 
-	console.log(grade)
 	return  grade;
 	
   
